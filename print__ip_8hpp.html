@@ -111,145 +111,70 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__container.html">is_container&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет, является ли тип контейнером (имеет iterator).  <a href="structis__container.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет, является ли тип контейнером (имеет вложенный тип iterator).  <a href="structis__container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__container_3_01T_00_01std_1_1void__t_3_01typename_01T_1_1iterator_01_4_01_4.html">is_container&lt; T, std::void_t&lt; typename T::iterator &gt; &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Специализация для типов с вложенным iterator.  <a href="structis__container_3_01T_00_01std_1_1void__t_3_01typename_01T_1_1iterator_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__tuple.html">is_tuple&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет, является ли тип std::tuple.  <a href="structis__tuple.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет, является ли тип экземпляром std::tuple.  <a href="structis__tuple.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html">is_tuple&lt; std::tuple&lt; Args... &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Специализация для std::tuple.  <a href="structis__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Специализация для std::tuple с произвольными типами элементов.  <a href="structis__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__homogeneous__tuple.html">is_homogeneous_tuple&lt; T, typename &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет, является ли тип std::tuple с одинаковыми типами элементов. Для не-tuple типов всегда false.  <a href="structis__homogeneous__tuple.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__homogeneous__tuple_3_01std_1_1tuple_3_01T_00_01Rest_8_8_8_01_4_01_4.html">is_homogeneous_tuple&lt; std::tuple&lt; T, Rest... &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Специализация для std::tuple. Наследует true_type если все типы элементов совпадают с первым, иначе false_type.  <a href="structis__homogeneous__tuple_3_01std_1_1tuple_3_01T_00_01Rest_8_8_8_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a23400751dd0457b55974ac3b9bf33ddc" id="r_a23400751dd0457b55974ac3b9bf33ddc"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t... I&gt; </td></tr>
-<tr class="memitem:a23400751dd0457b55974ac3b9bf33ddc"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">all_same_impl</a> (std::index_sequence&lt; I... &gt;)</td></tr>
-<tr class="memdesc:a23400751dd0457b55974ac3b9bf33ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция проверки одинаковости типов элементов кортежа.  <br /></td></tr>
-<tr class="separator:a23400751dd0457b55974ac3b9bf33ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f2162b04a10eea5666a598fae341e7e" id="r_a0f2162b04a10eea5666a598fae341e7e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </td></tr>
-<tr class="memitem:a0f2162b04a10eea5666a598fae341e7e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">constexpr</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a0f2162b04a10eea5666a598fae341e7e">all_same</a> ()</td></tr>
-<tr class="memdesc:a0f2162b04a10eea5666a598fae341e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, что все элементы кортежа имеют одинаковый тип.  <br /></td></tr>
-<tr class="separator:a0f2162b04a10eea5666a598fae341e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e7319110a4b3632cbcd9c8189eab66b" id="r_a6e7319110a4b3632cbcd9c8189eab66b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> , std::size_t... I&gt; </td></tr>
-<tr class="memitem:a6e7319110a4b3632cbcd9c8189eab66b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a6e7319110a4b3632cbcd9c8189eab66b">print_tuple_impl</a> (<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">value</a>, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::index_sequence</a>&lt; I... &gt;)</td></tr>
-<tr class="memdesc:a6e7319110a4b3632cbcd9c8189eab66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция вывода элементов кортежа через точку.  <br /></td></tr>
+<tr class="memitem:a6e7319110a4b3632cbcd9c8189eab66b" id="r_a6e7319110a4b3632cbcd9c8189eab66b"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t... I&gt; </td></tr>
+<tr class="memitem:a6e7319110a4b3632cbcd9c8189eab66b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a6e7319110a4b3632cbcd9c8189eab66b">print_tuple_impl</a> (const T &amp;value, std::index_sequence&lt; I... &gt;)</td></tr>
+<tr class="memdesc:a6e7319110a4b3632cbcd9c8189eab66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция вывода элементов кортежа через точку. Использует fold expression для разворачивания индексов на этапе компиляции.  <br /></td></tr>
 <tr class="separator:a6e7319110a4b3632cbcd9c8189eab66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625a41d18a2f300f363ed99d0503df5c" id="r_a625a41d18a2f300f363ed99d0503df5c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </td></tr>
-<tr class="memitem:a625a41d18a2f300f363ed99d0503df5c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::is_integral_v</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt;, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a625a41d18a2f300f363ed99d0503df5c">print_ip</a> (<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">value</a>)</td></tr>
-<tr class="memdesc:a625a41d18a2f300f363ed99d0503df5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для целочисленного типа. Байты выводятся в беззнаковом виде, начиная со старшего, через точку.  <br /></td></tr>
+<tr class="memitem:a625a41d18a2f300f363ed99d0503df5c" id="r_a625a41d18a2f300f363ed99d0503df5c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a625a41d18a2f300f363ed99d0503df5c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_integral_v&lt; T &gt;, void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a625a41d18a2f300f363ed99d0503df5c">print_ip</a> (const T &amp;value)</td></tr>
+<tr class="memdesc:a625a41d18a2f300f363ed99d0503df5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для целочисленного типа. Байты выводятся в беззнаковом виде начиная со старшего, разделённые точкой. Выводятся все байты числа вне зависимости от размера типа.  <br /></td></tr>
 <tr class="separator:a625a41d18a2f300f363ed99d0503df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52aa1ea8640f4300162585d898b99fba" id="r_a52aa1ea8640f4300162585d898b99fba"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </td></tr>
-<tr class="memitem:a52aa1ea8640f4300162585d898b99fba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::is_same_v</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a>, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::string</a> &gt;, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a52aa1ea8640f4300162585d898b99fba">print_ip</a> (<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">value</a>)</td></tr>
-<tr class="memdesc:a52aa1ea8640f4300162585d898b99fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для std::string. Строка выводится как есть.  <br /></td></tr>
+<tr class="memitem:a52aa1ea8640f4300162585d898b99fba" id="r_a52aa1ea8640f4300162585d898b99fba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a52aa1ea8640f4300162585d898b99fba"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_same_v&lt; T, std::string &gt;, void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a52aa1ea8640f4300162585d898b99fba">print_ip</a> (const T &amp;value)</td></tr>
+<tr class="memdesc:a52aa1ea8640f4300162585d898b99fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для std::string. Строка выводится как есть, вне зависимости от содержимого.  <br /></td></tr>
 <tr class="separator:a52aa1ea8640f4300162585d898b99fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6de99e3ab2758a7c382666a72c2fed5" id="r_af6de99e3ab2758a7c382666a72c2fed5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </td></tr>
-<tr class="memitem:af6de99e3ab2758a7c382666a72c2fed5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="structis__container.html">is_container</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">::value</a> &amp;&amp;!<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::is_same_v</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a>, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::string</a> &gt;, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#af6de99e3ab2758a7c382666a72c2fed5">print_ip</a> (<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">value</a>)</td></tr>
-<tr class="memdesc:af6de99e3ab2758a7c382666a72c2fed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для контейнеров std::list и std::vector. Элементы выводятся через точку.  <br /></td></tr>
+<tr class="memitem:af6de99e3ab2758a7c382666a72c2fed5" id="r_af6de99e3ab2758a7c382666a72c2fed5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af6de99e3ab2758a7c382666a72c2fed5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structis__container.html">is_container</a>&lt; T &gt;::value &amp;&amp;!std::is_same_v&lt; T, std::string &gt;, void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#af6de99e3ab2758a7c382666a72c2fed5">print_ip</a> (const T &amp;value)</td></tr>
+<tr class="memdesc:af6de99e3ab2758a7c382666a72c2fed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для контейнеров std::list и std::vector. Элементы выводятся через точку в порядке итерации. std::string явно исключён, несмотря на наличие iterator.  <br /></td></tr>
 <tr class="separator:af6de99e3ab2758a7c382666a72c2fed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1221012a5bc26f79ec0d7d331b7ff808" id="r_a1221012a5bc26f79ec0d7d331b7ff808"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </td></tr>
-<tr class="memitem:a1221012a5bc26f79ec0d7d331b7ff808"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a0f2162b04a10eea5666a598fae341e7e">all_same</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt;(), <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a1221012a5bc26f79ec0d7d331b7ff808">print_ip</a> (<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">value</a>)</td></tr>
-<tr class="memdesc:a1221012a5bc26f79ec0d7d331b7ff808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для std::tuple с одинаковыми типами элементов. Если типы элементов различаются — ошибка компиляции.  <br /></td></tr>
-<tr class="separator:a1221012a5bc26f79ec0d7d331b7ff808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa99423adc08e4229dce3f5cc038220" id="r_acfa99423adc08e4229dce3f5cc038220"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acfa99423adc08e4229dce3f5cc038220"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structis__homogeneous__tuple.html">is_homogeneous_tuple</a>&lt; T &gt;::value, void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#acfa99423adc08e4229dce3f5cc038220">print_ip</a> (const T &amp;value)</td></tr>
+<tr class="memdesc:acfa99423adc08e4229dce3f5cc038220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит условный IP-адрес для однородного std::tuple. Элементы выводятся через точку. Если типы элементов различаются — функция не участвует в разрешении перегрузок, что приводит к ошибке компиляции.  <br /></td></tr>
+<tr class="separator:acfa99423adc08e4229dce3f5cc038220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0f2162b04a10eea5666a598fae341e7e" name="a0f2162b04a10eea5666a598fae341e7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f2162b04a10eea5666a598fae341e7e">&#9670;&#160;</a></span>all_same()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">constexpr</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">bool</a> all_same </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Проверяет, что все элементы кортежа имеют одинаковый тип. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Тип кортежа. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true если все типы одинаковы, false если T не является кортежем. </dd></dl>
-
-</div>
-</div>
-<a id="a23400751dd0457b55974ac3b9bf33ddc" name="a23400751dd0457b55974ac3b9bf33ddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23400751dd0457b55974ac3b9bf33ddc">&#9670;&#160;</a></span>all_same_impl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , std::size_t... I&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool all_same_impl </td>
-          <td>(</td>
-          <td class="paramtype">std::index_sequence&lt; I... &gt;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Вспомогательная функция проверки одинаковости типов элементов кортежа. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Тип кортежа. </td></tr>
-    <tr><td class="paramname">I</td><td>Индексы элементов. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a625a41d18a2f300f363ed99d0503df5c" name="a625a41d18a2f300f363ed99d0503df5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a625a41d18a2f300f363ed99d0503df5c">&#9670;&#160;</a></span>print_ip() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::is_integral_v</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt;, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt; print_ip </td>
+          <td class="memname">std::enable_if_t&lt; std::is_integral_v&lt; T &gt;, void &gt; print_ip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Выводит условный IP-адрес для целочисленного типа. Байты выводятся в беззнаковом виде, начиная со старшего, через точку. </p>
+<p>Выводит условный IP-адрес для целочисленного типа. Байты выводятся в беззнаковом виде начиная со старшего, разделённые точкой. Выводятся все байты числа вне зависимости от размера типа. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Целочисленный тип. </td></tr>
+    <tr><td class="paramname">T</td><td>Целочисленный тип (int8_t, int16_t, int32_t, int64_t и др.). </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,19 +193,19 @@ template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::is_same_v</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a>, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::string</a> &gt;, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt; print_ip </td>
+          <td class="memname">std::enable_if_t&lt; std::is_same_v&lt; T, std::string &gt;, void &gt; print_ip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Выводит условный IP-адрес для std::string. Строка выводится как есть. </p>
+<p>Выводит условный IP-адрес для std::string. Строка выводится как есть, вне зависимости от содержимого. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Тип std::string. </td></tr>
@@ -302,22 +227,22 @@ template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="structis__container.html">is_container</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">::value</a> &amp;&amp;!<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::is_same_v</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a>, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::string</a> &gt;, <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt; print_ip </td>
+          <td class="memname">std::enable_if_t&lt; <a class="el" href="structis__container.html">is_container</a>&lt; T &gt;::value &amp;&amp;!std::is_same_v&lt; T, std::string &gt;, void &gt; print_ip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Выводит условный IP-адрес для контейнеров std::list и std::vector. Элементы выводятся через точку. </p>
+<p>Выводит условный IP-адрес для контейнеров std::list и std::vector. Элементы выводятся через точку в порядке итерации. std::string явно исключён, несмотря на наличие iterator. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Тип контейнера. </td></tr>
+    <tr><td class="paramname">T</td><td>Тип контейнера (std::vector, std::list и др.). </td></tr>
   </table>
   </dd>
 </dl>
@@ -330,28 +255,28 @@ template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf
 
 </div>
 </div>
-<a id="a1221012a5bc26f79ec0d7d331b7ff808" name="a1221012a5bc26f79ec0d7d331b7ff808"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1221012a5bc26f79ec0d7d331b7ff808">&#9670;&#160;</a></span>print_ip() <span class="overload">[4/4]</span></h2>
+<a id="acfa99423adc08e4229dce3f5cc038220" name="acfa99423adc08e4229dce3f5cc038220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa99423adc08e4229dce3f5cc038220">&#9670;&#160;</a></span>print_ip() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a0f2162b04a10eea5666a598fae341e7e">all_same</a>&lt; <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &gt;(), <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> &gt; print_ip </td>
+          <td class="memname">std::enable_if_t&lt; <a class="el" href="structis__homogeneous__tuple.html">is_homogeneous_tuple</a>&lt; T &gt;::value, void &gt; print_ip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Выводит условный IP-адрес для std::tuple с одинаковыми типами элементов. Если типы элементов различаются — ошибка компиляции. </p>
+<p>Выводит условный IP-адрес для однородного std::tuple. Элементы выводятся через точку. Если типы элементов различаются — функция не участвует в разрешении перегрузок, что приводит к ошибке компиляции. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Тип кортежа. </td></tr>
+    <tr><td class="paramname">T</td><td>Тип кортежа с одинаковыми типами элементов. </td></tr>
   </table>
   </dd>
 </dl>
@@ -370,18 +295,18 @@ template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">typename</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> , std::size_t... I&gt; </div>
+template&lt;typename T , std::size_t... I&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">void</a> print_tuple_impl </td>
+          <td class="memname">void print_tuple_impl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">const</a> <a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">T</a> &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf33ddc">std::index_sequence</a>&lt; I... &gt;&#160;</td>
+          <td class="paramtype">std::index_sequence&lt; I... &gt;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -392,11 +317,11 @@ template&lt;<a class="el" href="print__ip_8hpp.html#a23400751dd0457b55974ac3b9bf
       </table>
 </div><div class="memdoc">
 
-<p>Вспомогательная функция вывода элементов кортежа через точку. </p>
+<p>Вспомогательная функция вывода элементов кортежа через точку. Использует fold expression для разворачивания индексов на этапе компиляции. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Тип кортежа. </td></tr>
-    <tr><td class="paramname">I</td><td>Индексы элементов. </td></tr>
+    <tr><td class="paramname">I</td><td>Пакет индексов элементов. </td></tr>
   </table>
   </dd>
 </dl>

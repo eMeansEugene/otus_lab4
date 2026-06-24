@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,124,56"/>
-<area shape="rect" id="Node000001" href="$structis__container.html" title="Определяет, является ли тип контейнером (имеет iterator)." alt="" coords="172,5,385,31"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="138,32,171,28,172,33,138,37"/>
-<area shape="rect" id="Node000002" href="$structis__tuple.html" title="Определяет, является ли тип std::tuple." alt="" coords="223,55,334,80"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="138,49,224,59,223,64,137,54"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,147,38"/>
+<area shape="rect" id="Node000001" href="$structis__homogeneous__tuple_3_01std_1_1tuple_3_01T_00_01Rest_8_8_8_01_4_01_4.html" title="Специализация для std::tuple. Наследует true_type если все типы элементов совпадают с первым,..." alt="" coords="195,5,395,45"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
 </map>

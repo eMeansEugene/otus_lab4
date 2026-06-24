@@ -1,0 +1,5 @@
+<map id="is_homogeneous_tuple&lt; std::tuple&lt; T, Rest... &gt; &gt;" name="is_homogeneous_tuple&lt; std::tuple&lt; T, Rest... &gt; &gt;">
+<area shape="rect" id="Node000001" title="Специализация для std::tuple. Наследует true_type если все типы элементов совпадают с первым,..." alt="" coords="5,108,205,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="24,5,187,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,74,108,108,103,108,103,74"/>
+</map>

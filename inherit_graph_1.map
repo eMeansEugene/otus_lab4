@@ -1,7 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,56,117,81"/>
-<area shape="rect" id="Node000001" href="$structis__container_3_01T_00_01std_1_1void__t_3_01typename_01T_1_1iterator_01_4_01_4.html" title="Специализация для типов с вложенным iterator." alt="" coords="165,5,328,60"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="130,53,165,46,166,51,131,58"/>
-<area shape="rect" id="Node000002" href="$structis__tuple_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html" title="Специализация для std::tuple." alt="" coords="172,85,321,125"/>
-<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="131,79,172,88,171,93,130,85"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,63,124,88"/>
+<area shape="rect" id="Node000001" href="$structis__container.html" title="Определяет, является ли тип контейнером (имеет вложенный тип iterator)." alt="" coords="172,5,385,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="118,56,171,41,221,28,223,33,173,46,120,61"/>
+<area shape="rect" id="Node000002" href="$structis__homogeneous__tuple.html" title="Определяет, является ли тип std::tuple с одинаковыми типами элементов. Для не&#45;tuple типов всегда fals..." alt="" coords="193,55,365,95"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="138,73,192,73,192,78,138,78"/>
+<area shape="rect" id="Node000003" href="$structis__tuple.html" title="Определяет, является ли тип экземпляром std::tuple." alt="" coords="223,120,334,145"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="120,89,173,105,224,118,222,123,171,110,118,95"/>
 </map>
